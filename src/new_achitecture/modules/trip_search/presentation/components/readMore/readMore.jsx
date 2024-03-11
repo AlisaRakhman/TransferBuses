@@ -1,12 +1,13 @@
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./readMore.css";
-import { Button } from 'react-bootstrap';
+import "./readMore.module.css";
+// import { Button } from 'react-bootstrap';
 import dataForReadMore from "./readMoreJson.json";
 // import { makeStyles } from '@material-ui/core/styles';
 // import Button from '@material-ui/core/Button';
 // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.7/css/mdb.min.css" />
+import FooterComponent from "./FooterComponent/FooterComponent";
 
 export const readMore = () => {
 const data = dataForReadMore[0];
@@ -67,50 +68,51 @@ const data = dataForReadMore[0];
                     </a>
                 </div>
             </div>
-            <div className="custom-divider">
-            </div>
-            <div className="buttons">
-                <div>
-                    <a className='action-btn' href='/budgettraveltips/tree/city_descriptions/en/almeria'>
-                        Description
-                    </a>
-                </div>
-                <div>
-                    <a className='action-btn' href='/budgettraveltips/tree/accommodations/en/almeria/list'>
-                        Accommodations
-                    </a>
-                </div>
-                <div>
-                    <a className='action-btn' href='/budgettraveltips/tree/events_festivals/en/almeria/list'>
-                        Events & festivals
-                    </a>
-                </div>
-                <div>
-                    <a className='action-btn' href='/budgettraveltips/tree/city_attractions/en/almeria/list'>
-                        City attractions
-                    </a>
-                </div>
-                <div>
-                    <a className='action-btn' href='/budgettraveltips/tree/cheap_eats/en/almeria/list'>
-                        Cheap eats
-                    </a>
-                </div>
-                <div>
-                    <a className='action-btn' href='/budgettraveltips/tree/children_attractions/en/almeria/list'>
-                        Children attractions
-                    </a>
-                </div>
-                <div>
-                    <a class='action-btn' href='/budgettraveltips/tree/transportations/en/almeria'>
-                        Transportations
-                    </a>
-                </div>
-                <div>
-                    <a class='action-btn' href='/budgettraveltips/tree/routes/en/almeria'>
-                        Routes from Almeria
-                    </a>
-                </div>
-            </div>
+            {/*<div className="custom-divider">*/}
+            {/*</div>*/}
+            {/*<div className="buttons">*/}
+            {/*    <div>*/}
+            {/*        <a className='action-btn' href='/budgettraveltips/tree/city_descriptions/en/almeria'>*/}
+            {/*            Description*/}
+            {/*        </a>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <a className='action-btn' href='/budgettraveltips/tree/accommodations/en/almeria/list'>*/}
+            {/*            Accommodations*/}
+            {/*        </a>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <a className='action-btn' href='/budgettraveltips/tree/events_festivals/en/almeria/list'>*/}
+            {/*            Events & festivals*/}
+            {/*        </a>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <a className='action-btn' href='/budgettraveltips/tree/city_attractions/en/almeria/list'>*/}
+            {/*            City attractions*/}
+            {/*        </a>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <a className='action-btn' href='/budgettraveltips/tree/cheap_eats/en/almeria/list'>*/}
+            {/*            Cheap eats*/}
+            {/*        </a>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <a className='action-btn' href='/budgettraveltips/tree/children_attractions/en/almeria/list'>*/}
+            {/*            Children attractions*/}
+            {/*        </a>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <a class='action-btn' href='/budgettraveltips/tree/transportations/en/almeria'>*/}
+            {/*            Transportations*/}
+            {/*        </a>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <a class='action-btn' href='/budgettraveltips/tree/routes/en/almeria'>*/}
+            {/*            Routes from Almeria*/}
+            {/*        </a>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            <FooterComponent />
         </div>
     );
 };
